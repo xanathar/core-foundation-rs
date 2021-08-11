@@ -26,6 +26,7 @@ declare_TCFType!(CFRunLoop, CFRunLoopRef);
 impl_TCFType!(CFRunLoop, CFRunLoopRef, CFRunLoopGetTypeID);
 impl_CFTypeDescription!(CFRunLoop);
 
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub enum CFRunLoopRunResult {
     Finished = 1,
     Stopped = 2,
